@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie</title>
+    <style>
+      *{
+        padding: 0;
+        margin: 0;
+      }
+    body{
+        background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url("../../images/joker 2.jpg");
+        background-size: cover;
+      }
+    .movie-details{
+      margin: 4% auto;
+    }
+    .left-box{
+      color: #fff;
+    }
+    .casting img{
+      height: 80px;
+      width: 60px;
+    }
+    .movie-image{
+      height: 300px;
+      width: 100%;
+      box-shadow: -4px 4px 5px 0;
+    }
+    .series h4{
+      color: #fff;
+    }
+    .series img{
+      width: 100%;
+      height: 100px;
+      margin-top: 4px;
+      box-shadow: -4px 4px 5px 0;
+      cursor: pointer;
+      transition: 0.5s;
+    }
+    .series img:hover{
+      transform: translateY(-10px);
+    }
+    .review{
+      color: #fff;
+      margin-top: 15px;
+    }
+    .checked {
+  color: yellow;
+}
+  .rating{
+    color:#fff;
+    margin-top: 15px;
+  }
+  input{
+    border: none;
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 8px;
+    padding: 8px;
+    border-radius: 3px;
+  }
+    </style>
+</head>
+<body>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-danger ">
+        <a style =" border-radius: 5px; padding: 5px;" class="navbar-brand text-danger bg-dark" href="#">MOVIEDB</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Movies</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Tv Series</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Compare</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Genre
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Adventure</a>
+                  <a class="dropdown-item" href="#">Thriller</a>
+                  <a class="dropdown-item" href="#">Drama</a>
+                </div>
+              </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+          </form>
+          <ul class="navbar-nav">
+          <li class="nav-item">
+          <a class="nav-link" href="">Sign up</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="">Sign in</a>
+        </li>
+        </ul>
+        </div>
+      </nav>
+      <div class="container movie-details">
+        <div class="row">
+          <div class="col-md-6 left-box mt-5">
+            <h1>JOKER</h1>
+            <div><i style="color:yellow" class="fa fa-star"></i> 8.2</div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ullam accusamus accusantium voluptas obcaecati. Voluptate id soluta distinctio repellat maxime</p>
+            <p>Cast: </p>
+            <div class="casting">
+              <img src="../../images/1.jpg" title="Joaquin Phoenix" alt="">
+              <img src="../../images/2.jpg" title ="Robert De Niro" alt="">
+              <img src="../../images/3.jpg" title="Zazie Beetz" alt="">
+              <img src="../../images/4.jpg" title="Frances Conroy" alt="">
+              <img src="../../images/5.jpg" title="Brett Cullen" alt="">
+            </div>
+          </div>
+          <div style="margin-top: 80px;" class="col-md-6">
+          <img src="../../images/joker.jpg" alt="" class="movie-image">
+        </div>
+        </div>
+      </div>
+      <div class="container series">
+        <h4>Related Movies</h4>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="row">
+              <div class="col-6"><img src="../../images/john.jpg" alt="" title="John wick"></div>
+              <div class="col-6"><img src="../../images/inter.jpg" alt="" title="Interstellar"></div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="row">
+              <div class="col-6"><img src="../../images/godfather.jpg" alt="" title="godfather"></div>
+              <div class="col-6"><img src="../../images/inter.jpg" alt="" title="Interstellar"></div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="row">
+              <div class="col-6"><img src="../../images/john.jpg" alt="" title="John wick"></div>
+              <div class="col-6"><img src="../../images/godfather.jpg" alt="" title="godfather"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container review">
+      <h4>User Reviews</h4>
+      <div><span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span><strong> Absolutely amazing</strong></div>
+        <div><span style="font-size: 10px;">5 dec 2020   |   <strong>by Noobmaster-69</strong></span><span></div>
+        <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora magni impedit earum expedita minus aut nihil corrupti ipsa laudantium ratione.</div>
+    </div>
+    <div class="container rating">
+      <h4>Add a review</h4>
+      <div><span class="fa fa-star "></span>
+        <span class="fa fa-star "></span>
+        <span class="fa fa-star "></span>
+        <span class="fa fa-star "></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star "></span>
+        <span class="fa fa-star "></span>
+        <span class="fa fa-star "></span>
+        <span class="fa fa-star "></span>
+        <span class="fa fa-star"></span></div>
+      <div>
+        <form action="#">
+          <input type="text"placeholder="add a review">
+        </form>
+      </div>
+    </div>
+    <div style="text-align: center; margin-top:25px;"><i class="fa fa-facebook text-primary ml-3"></i><i class="fa fa-twitter text-info ml-3"></i><i class="fa fa-instagram text-danger ml-3"></i><i class="fa fa-google text-success ml-3"></i></div>
+    <footer class="page-footer font-small bg-danger">
+  
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3">© 2020 Copyright:
+        <a href="#"> MOVIEDB.com</a>
+      </div>
+      <!-- Copyright -->
+  
+    </footer>
+    <!-- Footer -->
+  
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://use.fontawesome.com/98e8c80e6e.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <script src="./pages/js/script.js"></script>
+</body>
+</html>
