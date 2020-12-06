@@ -1,0 +1,148 @@
+*{
+padding: 0;
+margin: 0;
+}
+body{
+    padding: 0;
+    margin: 0;
+    font-family:'Roboto',sans-serif;
+}
+body{
+  background-color:rgb(16,16,16);
+}
+.card button{
+  margin-left: 70px;
+}
+
+.carousel-inner{
+    width: 100%;
+}
+.moviecontainer {
+    position: relative;
+    text-align: center;
+    color: white;
+    text-align: justify;
+    z-index: 21;
+  }
+  .title-in {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    text-align: justify;
+  }
+  .title-in a {
+      color: #fff;
+      text-decoration: none;
+  }
+  .title-in i{
+      color: yellow;
+  }
+  .title-in .blue a {
+      background-color : #4183c4;
+      padding: 3px;
+      padding-left: 5px;
+      padding-right: 5px ;
+      border-radius:5px ;
+  }
+  .title-in .green a {
+    background-color : #7EFE00;
+    padding: 3px;
+    padding-left: 5px;
+    padding-right: 5px ;
+    border-radius:5px ;
+}
+  
+  
+  .title-in .red a {
+    background-color : #E3170D;
+    padding: 3px;
+    padding-left: 5px;
+    padding-right: 5px ;
+    border-radius:5px ;
+}
+.title-in .yellow a {
+    background-color : #FFA812;
+    padding: 3px;
+    padding-left: 5px;
+    padding-right: 5px ;
+    border-radius:5px ;
+}
+
+ .movieName h4 a:hover{
+      color: #dcf836;
+  }
+  .carousel2 .carousel-control-prev {
+    left: -100px;
+}
+  .carousel2 .carousel-control-next {
+    right: -100px;
+}
+.title-in p{
+    color: #fff;
+    font-size: 15px;
+    text-align: justify;
+}
+.carousel1 .title-in{
+    position: absolute;
+    top: 250px;
+    left: -1200px;
+    transition:ease-in-out .3s;
+
+}
+.carousel-inner:hover .carousel1 .title-in{
+ transition: ease-in-out .3s;
+    left: 50px;   
+    opacity: 1;
+}
+
+.carousel2 .moviecontainer:hover {
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    z-index:10;
+    transition: ease-in-out .3s;
+    cursor: pointer;
+}
+
+  #button-addon1 {
+    color: #ffc371;
+  }
+  
+  i {
+    color: #ffc371;
+  }
+  
+  .form-control::placeholder {
+    font-size: 0.95rem;
+    color: #aaa;
+    font-style: italic;
+  }
+  
+  .form-control.shadow-0:focus {
+    box-shadow: none;
+  }
+  
+  .footer1{
+    margin-top: 100px;
+}
+footer{
+    width: 100vw;
+}
+.movieName a:nth-of-type(1){
+    color: #66CD00	;
+    font-weight:bolder;
+}
+
+.container-fluid{
+    margin-top: 100px;
+}
+.nav-pills a:nth-of-type(2),.nav-pills a:nth-of-type(3){
+    color: #E3170D;
+    opacity: .8;
+    font-weight: bolder;
+}
+.nav-pills a:nth-of-type(5){
+    color: white;
+}
+.nav-pills i{
+    color: white;
+}
